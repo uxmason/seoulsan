@@ -99,7 +99,7 @@ export default function Home() {
                   <p className='T-01'>Guatemala</p>
                 </div>
                 <p className='T-03'>9.0</p>
-              </div> 
+              </div>
               <div className='C-04'>
                 <div className='C-05 isLong'>
                   <p className='T-00'><span className='isEthiopia'></span>에티오피아 예가체프 코케허니 G1</p>
