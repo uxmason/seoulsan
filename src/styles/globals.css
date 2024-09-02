@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -40,43 +42,13 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Diphylleia", serif;
+  font-style: normal;
+  color: #686762;
 }
 
 html,
@@ -100,8 +72,71 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.styleSheet {
+  background: url(../../public/styleSheet.png) no-repeat;
+  width: 500px;
+  height: 1000px;
+  background-size: 500px 1000px;
+}
+
+.S-00 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+}
+
+.S-00 .C-00 {
+  background-color: #CDEBF1;
+  height: 100%;
+  display: flex;
+}
+.S-00 .C-01 {
+  width: 30%;
+  height: 100%;
+}
+.S-00 .C-02 {
+  width: 35%;
+  height: 100%;
+  padding: 100px 5vw;
+}
+.S-00 .C-03 {
+  width: 250px;
+  height: 250px;
+  margin: 100px calc(50% - 125px);
+}
+.S-00 .C-04 {
+  display: flex;
+  padding: 2px 0;
+  border-bottom: 1px dashed rgba(68,67,62,.25);
+}
+.S-00 .C-05 {
+  width: 280px;
+}
+.S-00 .C-05.isLong {
+  width: 375px;
+}
+.S-00 .T-00 {
+  font-size: 2.3em;
+}
+.S-00 .T-01 {
+  font-size: 1.6em;
+}
+.S-00 .T-02 {
+  border: 1px solid rgba(68,67,62,.25);
+  margin: 32px 0;
+  padding: 0 10px;
+  border-radius: 20px;
+  line-height: 30px;
+  height: 34px;
+  width: 95px;
+  text-align: center;
+}
+.S-00 .T-03 {
+  line-height: 100px;
+  font-weight: 600;
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 3.5em;
+  width: calc(100% - 380px);
+  text-align:right;
 }
