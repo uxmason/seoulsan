@@ -1,10 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  function enterFullscreen() {
+    document.documentElement.requestFullscreen()
+  }
   return (
     <>
       <Head>
@@ -14,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section className='S-00'>
+        <section className='S-00' onClick={enterFullscreen}>
           <div className='C-00 isCoffee'>
             <div className='C-01'>
               <div className='C-03 styleSheet'></div>
