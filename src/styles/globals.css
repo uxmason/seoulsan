@@ -74,8 +74,6 @@ a {
 
 .styleSheet {
   background: url(/styleSheet.png) no-repeat;
-  width: 500px;
-  height: 1000px;
   background-size: 500px 1000px;
 }
 
@@ -91,6 +89,27 @@ a {
   height: 100%;
   display: flex;
   padding: 0 2.5vw;
+  position: fixed;
+  transition: 1s ease-in-out;
+  top:100vh;
+  z-index: normal;
+}
+.S-00 .C-00.isAde {
+  background-color: #DEF1D0;
+}
+.S-00 .C-00.isBeverage {
+  background-color: #CBCEEA;
+}
+.S-00 .C-00.isHerb {
+  background-color: #F8E5E5;
+}
+.S-00 .C-00.isOpened {
+  top:0;
+  z-index: 3;
+}
+.S-00 .C-00.isFolded {
+  top:-50vh;
+  z-index: 2;
 }
 .S-00 .C-01 {
   width: 25vw;
@@ -104,7 +123,17 @@ a {
 .S-00 .C-03 {
   width: 250px;
   height: 250px;
-  margin: 100px calc(50% - 125px);
+  margin: 250px calc(50% - 125px) 0;
+}
+.S-00 .C-00.isAde .C-03 {
+  background-position-x: -250px;
+}
+.S-00 .C-00.isBeverage .C-03 {
+  background-position-y: -250px;
+}
+.S-00 .C-00.isHerb .C-03 {
+  background-position-x: -250px;
+  background-position-y: -250px;
 }
 .S-00 .C-04 {
   display: flex;
@@ -117,8 +146,19 @@ a {
 .S-00 .C-05.isLong {
   width: 375px;
 }
+.S-00 .C-06 {
+  width: 150px;
+  height: 150px;
+  background-position-y: -500px;
+  margin: 50px calc(50% - 75px) 0;
+  opacity: .3;
+  transform: scale(.8);
+}
 .S-00 .T-00 {
   font-size: 2.3em;
+}
+.S-00 .T-00 .isBox {
+  margin-right:10px;
 }
 .S-00 .T-01 {
   font-size: 1.6em;
@@ -144,6 +184,9 @@ a {
 }
 
 @media only screen and (max-width: 1750px) {
+  .S-00 .C-03 {
+    margin: 200px calc(50% - 125px) 0;
+  }
   .S-00 .C-05 {
     width: 170px;
   }
@@ -162,9 +205,10 @@ a {
   .S-00 .T-02 {
     font-size: .8em;
     width: 85px;
-    margin-right: 10px;
+    margin: 22px 10px 22px 0;
   }
   .S-00 .T-03 {
     width: calc(100% - 265px);
+    line-height: 80px;
   }
 }
