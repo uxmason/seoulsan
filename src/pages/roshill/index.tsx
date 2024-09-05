@@ -29,6 +29,7 @@ export default function Home() {
       <main>
         <section className='S-00' onClick={enterFullscreen}>
           <div className={`C-00 isCoffee ${(counter%4 == 0) ? `isOpened`: null} ${(counter%4 == 1) ? `isFolded`: null}`}>
+            <div className='C-07'></div>
             <div className='C-01'>
               <div className='C-03 styleSheet'></div>
               <div className='C-06 styleSheet'></div>
@@ -131,6 +132,7 @@ export default function Home() {
             </div>
           </div>
           <div className={`C-00 isAde ${(counter%4 == 1) ? `isOpened`: null} ${(counter%4 == 2) ? `isFolded`: null}`}>
+            <div className='C-07'></div>
             <div className='C-01'>
               <div className='C-03 styleSheet'></div>
               <div className='C-06 styleSheet'></div>
@@ -225,6 +227,9 @@ export default function Home() {
             </div>
           </div>
           <div className={`C-00 isBeverage ${(counter%4 == 2) ? `isOpened`: null} ${(counter%4 == 3) ? `isFolded`: null}`}>
+            <div className='C-07'></div>
+            <div className='C-07'></div>
+            <div className='C-07'></div>
             <div className='C-01'>
               <div className='C-03 styleSheet'></div>
               <div className='C-06 styleSheet'></div>
@@ -298,6 +303,7 @@ export default function Home() {
             </div>
           </div>
           <div className={`C-00 isHerb ${(counter%4 == 3) ? `isOpened`: null} ${(counter%4 == 0) ? `isFolded`: null}`}>
+            <div className='C-07'></div>
             <div className='C-01'>
               <div className='C-03 styleSheet'></div>
               <div className='C-06 styleSheet'></div>
