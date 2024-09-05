@@ -338,6 +338,8 @@ export default function Home() {
                 </div>
                 <p className='T-03'>5.0</p>
               </div>
+            </div>
+            <div className='C-02'>
               <div className='C-04'>
                 <div className='C-05 isLong'>
                   <p className='T-00'>아이스티</p>
@@ -352,8 +354,6 @@ export default function Home() {
                 </div>
                 <p className='T-03'>6.0</p>
               </div>
-            </div>
-            <div className='C-02'>
               <div className='C-04'>
                 <div className='C-05 isLong'>
                   <p className='T-00'>뽀로로 음료수 (사과 / 밀크 / 딸기)</p>
