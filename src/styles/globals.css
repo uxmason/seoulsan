@@ -163,6 +163,7 @@ a {
   background: url(/image20240905_0.png) repeat;
   background-position: center;
   background-size: cover;
+  opacity: .75;
 }
 .S-00 .C-00.isAde .C-07 {
   width: 500px;
