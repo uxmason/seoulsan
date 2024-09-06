@@ -7,14 +7,20 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [counter, setCount] = useState(0);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setCount(counter + 1);
+  //   }, 10000);
+  // })
   useEffect(() => {
-    setInterval(() => {
-      setCount(counter + 1);
+    const interval = setInterval(() => {
+      setCount(prevCount => prevCount + 1); 
     }, 10000);
-  })
-  useEffect(() => {
+    return () => clearInterval(interval);
+  }, []);
+  // useEffect(() => {
     
-  }, [counter])
+  // }, [counter])
   function enterFullscreen() {
     document.documentElement.requestFullscreen()
   }
