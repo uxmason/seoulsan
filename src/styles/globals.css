@@ -207,6 +207,10 @@ a {
   background-position: center;
   background-size: cover;
 }
+.S-00 .C-08 {
+  width: 70vw;
+  display: flex;
+}
 .S-00 .T-00 {
   font-size: 2.3em;
 }
@@ -263,5 +267,69 @@ a {
   .S-00 .T-03 {
     width: calc(100% - 265px);
     line-height: 80px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .S-00 .C-00 {
+    width: 100%;
+  }
+  .S-00 .C-01 {
+    width: 40vw;
+  }
+  .S-00 .C-02 {
+    width: 55vw;
+  }
+  .S-00 .C-08 {
+    width: 55vw;
+    display: block;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .S-00 .C-08::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .S-00 .C-00 {
+    display: block;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .S-00 .C-00::-webkit-scrollbar {
+    display: none;
+  }
+  .S-00 .C-01 {
+    width: 95vw;
+  }
+  .S-00 .C-02 {
+    width: 95vw;
+    padding: 25px 5vw;
+  }
+  .S-00 .C-03 {
+    margin: 100px calc(50% - 125px) 0;
+  }
+  .S-00 .C-06 {
+    margin: 10px calc(50% - 75px) 0;
+  }
+  .S-00 .C-00.isAde .C-07 {
+    right:-10vw
+  }
+  .S-00 .C-00.isBeverage .C-07:nth-of-type(1) {
+    right: 30vw;
+  }
+  .S-00 .C-00.isBeverage .C-07:nth-of-type(2) {
+    right: 70vw;
+  }
+  .S-00 .C-00.isBeverage .C-07:nth-of-type(3) {
+    right: -5vw;
+  }
+  .S-00 .C-00.isHerb .C-07 {
+    right: 55vw;
+  }
+  .S-00 .C-08 {
+    width: 95vw;
+    overflow-y: none;
   }
 }
