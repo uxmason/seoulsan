@@ -317,7 +317,7 @@ a {
     right:-10vw
   }
   .S-00 .C-00.isBeverage .C-07:nth-of-type(1) {
-    right: 30vw;
+    display: none;
   }
   .S-00 .C-00.isBeverage .C-07:nth-of-type(2) {
     right: 70vw;
